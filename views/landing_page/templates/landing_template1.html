@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="views/register/css/template1.css">
+<style>
+
+</style>
+<div ng-controller="LandingController" class="container-fluid well span6">
+
+    <div class="row" >
+        <div class="col-sm-1" >
+
+        </div>
+        <div class="col-sm-6" >
+            <h1>Time Remaining</h1>
+            </br>
+            <div class="your-clock" ></div>
+        </div>
+
+        <div class="col-sm-5" >
+            <div class="row-fluid">
+
+                <div class="span8">
+                    <h3>{{type}}</h3> <h3 ng-if="type=='Megacable-prepaid'">{{name}}</h3>
+
+                </div>
+
+                <div class="span2">
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle btn-info" data-toggle="dropdown">
+                            Action
+                            <span class="icon-cog icon-white"></span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li ng-if="type=='Megacable-prepaid'"><a href="#/password"><span class="icon-wrench"></span>Change Password</a></li>
+                            <li ng-if="type=='Megacable-prepaid'"><a ng-click="purchase()"><span class="icon-trash"></span>Buy More Time</a></li>
+                            <li><a ng-click="landing()"><span class="icon-trash"></span>Logout - Go to Landing Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </br></br></br></br></br>
+            </div>
+
+        </div>
+
+</div>

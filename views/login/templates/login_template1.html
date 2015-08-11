@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="views/login/css/template1.css" xmlns="http://www.w3.org/1999/html">
+<style>
+
+</style>
+<div ng-controller="LoginController" class="container">
+    <span us-spinner="{radius:30, width:8, length: 16}"></span>
+
+    <div class="row">
+        <div class="col-md-12" style="margin-top: 15%;">
+
+            <div class="wrap">
+
+                <p class="form-title">
+                    <img src="views/login/css/img/megacable.png">
+                    Hotspot-Location</p>
+                <form class="login">
+                    <input type="text" style="color: #000000" ng-disabled="checked" placeholder="Username" id="username" ng-model="user.name" />
+                    <input type="password" style="color: #000000" ng-disabled="checked" placeholder="Password" id="password" ng-model="user.password" />
+
+                    <div class="radio">
+                        <label style="color: white"><input type="radio" ng-model="option" value="megacable" name="optradio">Megacable Registered User</label>
+                    </div>
+                    <div class="radio">
+                        <label style="color: white"><input type="radio" ng-model="option" value="prepaid" name="optradio">Pre-Paid Customer</label>
+                    </div>
+                    <div class="radio">
+                        <label style="color: white"><input type="radio" ng-model="option" value="free" name="optradio">Try for Free</label>
+                    </div>
+                    <input type="submit" ng-click="login(user.name,user.password)" value="Sign In" class="btn btn-success btn-sm" />
+                    <input type="submit" ng-click="goSignUp()" value="Create Pre-Paid Account" class="btn btn-warning btn-sm" />
+                    </br>
+                    </br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <modal visible="showModal">
+
+    </modal>
+
+</div>

@@ -1,0 +1,68 @@
+
+    <link rel="stylesheet" href="views/buy_time/css/style.css">
+    <link rel="stylesheet" href="views/register/css/template1.css">
+
+
+    <span us-spinner="{radius:30, width:8, length: 16}"></span>
+
+        <h1 style="color: white;margin-left: 20%;margin-top: 10%"  ng-if="time==false">You don't have any time left, please buy more time now and enjoy!</h1>
+  <div class="plans">
+    <div class="plan" style="margin-left: 15px;">
+      <p class="plan-price">$39 <span class="plan-unit">1 HOUR</span></p>
+      <ul class="plan-features">
+        <li class="plan-feature">1 <span class="plan-feature-name">Device</span></li>
+        <li class="plan-feature">5<span class="plan-feature-unit">Mbps</span> <span class="plan-feature-name">Speed</span></li>
+      </ul>
+      <a ng-click="buy(60)" class="plan-button">Purchase</a>
+    </div>
+    <div class="plan plan-highlight">
+      <p class="plan-recommended">Recommended</p>
+      <p class="plan-price">$49 <span class="plan-unit">1 DAY</span></p>
+      <ul class="plan-features">
+        <li class="plan-feature">1<span class="plan-feature-name">Device</span></li>
+        <li class="plan-feature">5<span class="plan-feature-unit">Mbps</span> <span class="plan-feature-name">Speed</span></li>
+
+      </ul>
+      <a ng-click="buy(1440)" class="plan-button">Purchase</a>
+    </div>
+    <div class="plan">
+      <p class="plan-price">$99 <span class="plan-unit">3 DAYS</span></p>
+      <ul class="plan-features">
+        <li class="plan-feature">1<span class="plan-feature-name">Device</span></li>
+        <li class="plan-feature">5<span class="plan-feature-unit">Mbps</span> <span class="plan-feature-name">Speed</span></li>
+
+      </ul>
+      <a ng-click="buy(4320)" class="plan-button">Purchase</a>
+    </div>
+    <div class="plan">
+      <p class="plan-price">$149 <span class="plan-unit">7 DAYS</span></p>
+      <ul class="plan-features">
+        <li class="plan-feature">1<span class="plan-feature-name">Device</span></li>
+        <li class="plan-feature">5<span class="plan-feature-unit">Mbps</span> <span class="plan-feature-name">Speed</span></li>
+
+      </ul>
+      <a ng-click="buy(10080)" class="plan-button">Purchase</a>
+    </div>
+    <div class="plan">
+      <p class="plan-price">$199 <span class="plan-unit">15 DAYS</span></p>
+      <ul class="plan-features">
+        <li class="plan-feature">1<span class="plan-feature-name">Device</span></li>
+        <li class="plan-feature">5<span class="plan-feature-unit">Mbps</span> <span class="plan-feature-name">Speed</span></li>
+
+      </ul>
+      <a ng-click="buy(21600)" class="plan-button">Purchase</a>
+    </div>
+    <div class="plan">
+      <p class="plan-price">$299<span class="plan-unit">1 MONTH</span></p>
+      <ul class="plan-features">
+        <li class="plan-feature">1<span class="plan-feature-name">Device</span></li>
+        <li class="plan-feature">5<span class="plan-feature-unit">Mbps</span> <span class="plan-feature-name">Speed</span></li>
+
+      </ul>
+      <a ng-click="buy(43200)" class="plan-button">Purchase</a>
+    </div>
+  </div>
+          <input ng-if="time==true" style="margin-left: 20%;" type="submit" ng-click="remainingTime()" value="Return to User's Profile" class="btn btn-warning btn-sm" />
+        </br></br>
+          <input style="margin-left: 20%;" type="submit" ng-click="goLogin()" value="Logout - Return to the Login Page" class="btn btn-success btn-sm" />
+

@@ -1,0 +1,83 @@
+
+<link rel="stylesheet" href="views/register/css/template2.css">
+<link rel="stylesheet" href="views/register/css/style.css">
+<link rel="stylesheet" href="views/register/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+<style>
+
+        .input-group .form-control {
+            position: relative;
+            z-index: 2;
+            float: left;
+            width: 90% !important;
+            margin-bottom: 0;
+
+    }
+</style>
+<span us-spinner="{radius:30, width:8, length: 16}"></span>
+<div ng-controller="RegisterController" class="container">
+
+    <div class="container">
+        <div class="row text-center pad-top ">
+            <div class="col-md-12">
+                <h2 style="color: #000000">Registration Page</h2>
+            </div>
+        </div>
+        <div class="row  pad-top">
+
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong>   Register Yourself </strong>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <br/>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-circle-o-notch"  ></i></span>
+                                <input type="text" class="form-control" ng-model="create.user" placeholder="Your Name*"  />
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-tagfa fa-tag"  ></i></span>
+                                <input type="text" class="form-control" ng-model="create.username" placeholder="Desired Username*"  />
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">@</span>
+                                <input type="text" class="form-control" ng-model="create.email"placeholder="Your Email"  />
+                            </div>
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                <input type="number" class="form-control" ng-model="create.phone" placeholder="Phone Number"  />
+                            </div>
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-book"></i></span>
+                                <input type="text" class="form-control" ng-model="create.desc" placeholder="Description"/>
+                            </div>
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                                <input type="password" class="form-control" id="password"  ng-model="create.password" placeholder="Enter Password*"  />
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                                <input type="password" class="form-control" id="confirm_password" ng-model="create.passwordrepeat" placeholder="Retype Password*"  />
+                            </div>
+
+                            <input type="submit" ng-click="create()" class="btn btn-danger " value="Register Me"/>
+                            <hr />
+                            Already Registered ?  <a ng-href="#/" >Login here</a>
+                        </form>
+                    </div>
+                    <modal visible="showModal">
+
+                    </modal>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>

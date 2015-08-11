@@ -1,0 +1,18 @@
+[
+  {
+      "login": "views/login/templates/login_template1.html",
+      "landing": "views/landing_page/templates/landing_template1.html",
+      "megacable": "views/megacable/templates/megacable_template1.html",
+      "change": "views/change_password/templates/change_template1.html",
+      "payment": "views/buy_time/templates/purchase_template1.html",
+      "userprofile": "views/register/templates/register_template1.html",
+      "userfree": "views/register_free/templates/register_template1.html",
+      "customuserfree": "views/custom_register_free/templates/register_template1.html",
+      "errorfree": "views/session_expired/templates/error_template1.html",
+      "errorprepaid": "views/session_expired/templates/error_template2.html",
+      "customssid": "views/custom/templates/custom_template1.html",
+      "customlogin": "views/custom_login/templates/login_template1.html",
+      "customlanding": "views/custom_landing_page/templates/landing_template1.html",
+      "customerrorfree": "views/custom_session_expired/templates/error_template1.html"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "name": "semantic-ui-dropdown",
+  "description": "Dropdown - Semantic UI",
+  "homepage": "http://www.semantic-ui.com",
+  "author": {
+    "name": "Jack Lukic",
+    "web": "http://www.jacklukic.com"
+  },
+  "ignore": [
+    "docs",
+    "node",
+    "server",
+    "spec",
+    "src",
+    "test"
+  ],
+  "keywords": [
+    "semantic",
+    "ui",
+    "css3",
+    "framework"
+  ],
+  "license": [
+    "http://semantic-ui.mit-license.org/"
+  ],
+  "main": [
+    "dropdown.css"
+  ],
+  "version": "2.0.7",
+  "_release": "2.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.7",
+    "commit": "69dcb6634d32b247b143e51d38493e1a5466309d"
+  },
+  "_source": "git://github.com/Semantic-Org/UI-Dropdown.git",
+  "_target": "~2.0.7",
+  "_originalSource": "semantic-ui-dropdown",
+  "_direct": true
+}

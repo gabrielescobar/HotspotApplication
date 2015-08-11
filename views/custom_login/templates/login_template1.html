@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="views/custom_login/css/template1.css" xmlns="http://www.w3.org/1999/html">
+<style>
+    form {
+        width: 400px !important;
+    }
+</style>
+<div ng-controller="CustomLoginController" class="container">
+    <span us-spinner="{radius:30, width:8, length: 16}"></span>
+
+    <div class="row">
+        <div class="col-md-12" style="margin-left: -53%;">
+
+            <div class="wrap">
+
+                <p class="form-title">
+                    <img style="width: 17%;"src="views/custom_login/css/img/bigTrainLogo.png">
+                    Hotspot-Location</p>
+                <form class="login">
+                    <h1>Try For Free</h1>
+                    <input type="submit" ng-click="goSignUp()" value="Register Your Device" class="btn btn-success btn-sm" />
+                    <input type="submit" ng-click="login()" value="Click Here If Your Device Is Already Registered" class="btn btn-warning btn-sm" />
+                    </br>
+                    </br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <modal visible="showModal">
+
+    </modal>
+
+</div>
